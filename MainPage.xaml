@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="Rectangle.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Rectangle"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="{ThemeResource SystemControlTransparentBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="254*"/>
+            <RowDefinition Height="747*"/>
+        </Grid.RowDefinitions>
+        <Canvas HorizontalAlignment="Left" Height="177" Margin="20,48,0,0" VerticalAlignment="Top" Width="303">
+            <Rectangle Height="139" Canvas.Left="10" Canvas.Top="10" Width="256" Stroke="{ThemeResource TextSelectionHighlightColorThemeBrush}" Fill="{ThemeResource SystemControlForegroundChromeMediumBrush}"/>
+            <TextBlock Height="30" TextWrapping="Wrap" Text="H" Width="28" TextAlignment="Center" RenderTransformOrigin="-0.036,-4.105" HorizontalAlignment="Center" Canvas.Left="271" Canvas.Top="64" VerticalAlignment="Center"/>
+        </Canvas>
+        <TextBlock HorizontalAlignment="Left" Height="21" Margin="150,199,0,0" TextWrapping="Wrap" Text="W" VerticalAlignment="Top" Width="28" TextAlignment="Center" RenderTransformOrigin="-0.036,-4.105" TextLineBounds="Full"/>
+        <TextBlock HorizontalAlignment="Left" Margin="103,33,0,0" TextWrapping="Wrap" Text="Find rectangle area." VerticalAlignment="Top"/>
+        <TextBox x:Name="TextBoxW" HorizontalAlignment="Left" Margin="103,223,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="0.816,-0.234" Width="121" Height="35" Grid.RowSpan="2"/>
+        <TextBox x:Name="TextBoxH" HorizontalAlignment="Left" Height="35" Margin="328,102,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="121"/>
+        <Button Content="Calculate Area" Margin="307,204,0,0" VerticalAlignment="Top" Width="134" Click="Button_Click"/>
+        <TextBlock x:Name="TextBlockArea" HorizontalAlignment="Left" Margin="307,20,0,0" TextWrapping="Wrap" Text="Area = " VerticalAlignment="Top" Width="187" Height="30" TextLineBounds="Full" Grid.Row="1"/>
+
+    </Grid>
+</Page>
